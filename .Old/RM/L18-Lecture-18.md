@@ -1,5 +1,4 @@
-](mailto:prateekrajgautam@gmail.com)
----
+
 
 
 ### **Hypothesis** are statement about the given problem. 

@@ -1,4 +1,4 @@
-# Abstract, Conclusion and Keywords
+# Abstract, Conclusion, and Keywords
 
 In a research paper, the abstract, conclusion, and keywords are distinct components that serve specific purposes:
 

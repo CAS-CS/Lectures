@@ -161,7 +161,67 @@ This methodology can produce interesting results as it presents exact data while
 
 
 
+---
 
+# Empirical research
+
+> It is derived from the greek word **empeirikos** which means “experienced”
+
+Empirical research is defined as any research where conclusions of the study is strictly drawn from concretely empirical **evidence**, and therefore are **“verifiable”** evidence.
+
+> "I will not believe it unless I see it"
+
+> *This came from the ancient empiricists, a fundamental understanding that powered the emergence of medieval science during the renaissance period and laid the foundation of modern science, as we know it today.*
+
+---
+
+# Deductive vs Inductive research
+
+> Deductive 
+
+* Develope a hypothesis based on existing theory, and then designing a research strategy to test the hypothesis
+* Deductive approach is concerned with deducting conclusions from premises or propositions.
+
+> Inductive
+
+* Inductive approach starts with the observations and theories are proposed towards the end of the research process as a result of observations
+* It involves the search for pattern from observation and the development of explanations, theories for those patterns through series of hypotheses.
+
+> *No theories or hypotheses would apply in inductive studies at the beginning of the research and the researcher is free in terms of altering the direction for the study after the research process had commenced.*
+
+---
+
+# Criteria of Good Research
+
+1. The **purpose** of the research should be **clearly defined**.
+
+2. The **research procedure used should be described in sufficient detail to permit another researcher to repeat** the research for further advancement
+
+3. The procedural design of the research should be carefully planned to yield results that are
+   as objective as possible.
+
+4. The researcher should **report their short commings**, like flaws in their design, human error, etc.
+
+5. The validity and reliability of the data
+   should be checked carefully.
+
+6. Conclusions should be confined to those **justified by the data**.
+
+### ***Good research is systematic, logical, empirical, and replicable.***
+
+---
+
+# Problems Encountered by Researchers in India
+
+1. The lack of a scientific training in the methodology of research
+
+2. Insufficient interaction between the university, business, government.
+
+3. Business do not trust researchers with their data.
+
+4. No assistance for clerical work.
+
+5. Library mismanagement and lack of access to journals and books.
 
 
 ---
@@ -170,12 +230,7 @@ This methodology can produce interesting results as it presents exact data while
 
 * [Research_Methodology_by_C_R_Kothari](https://www.academia.edu/43821533/Research_Methodology_by_C_R_Kothari)
 
-### You may join the telegram channel for subject related updates.
 
-![https://t.me/+CgEoOwoKmpgwMzBl](./telegramGroup.png)
-
-
-[https://t.me/+CgEoOwoKmpgwMzBl](https://t.me/+CgEoOwoKmpgwMzBl)
 
 
 

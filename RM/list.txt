@@ -12,3 +12,4 @@
 ./L011 Abstract Conclusion and Keywords.md
 ./L012-Discriptive Statistics.md
 ./L014 Population and scales.md
+./L015-Stages and Types of Research.md

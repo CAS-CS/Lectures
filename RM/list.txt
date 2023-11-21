@@ -10,3 +10,5 @@
 ./L009 Author and Journal level metric idexing and identity Lecture-009.md
 ./L010 markdown.md
 ./L011 Abstract Conclusion and Keywords.md
+./L012-Discriptive Statistics.md
+./L014 Population and scales.md

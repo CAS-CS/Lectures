@@ -19,7 +19,7 @@ In a research paper, the abstract, conclusion, and keywords are distinct compone
 - **Content:** Keywords are usually listed below the abstract. They are chosen to reflect the essential elements of the research and are often used by researchers when searching for relevant articles.
 - **Length:** The number of keywords is typically limited, often ranging from three to ten.
 ---
-# Acknowledgments a research paper
+# Acknowledgments in a research paper
 
 The acknowledgments section is a brief statement where the authors express their gratitude and recognition to individuals, organizations, or institutions that have contributed to the research or the publication process. The acknowledgments are typically placed at the beginning or end of the paper, after the main content but before the references.
 
@@ -86,7 +86,7 @@ The acknowledgments section is a brief statement where the authors express their
 
 
 ---
-#Oxford Comma
+# Oxford Comma 
 The Oxford comma, also known as the serial comma, is a punctuation mark (a comma) used after the penultimate item in a list of three or more items. Its usage is a matter of style, and different style guides have different recommendations regarding whether to include the Oxford comma.
 
 **Example:**
@@ -94,8 +94,8 @@ Consider the sentence: "I had eggs, toast, and orange juice for breakfast."
 
 In this example, the Oxford comma is the one after "toast." Including the Oxford comma helps clarify the separation between items in the list. Without it, the sentence could be interpreted as having "toast and orange juice" as a combined item.
 
-> Correct usage with the Oxford comma: "I had eggs, toast, and orange juice for breakfast."
-> Usage without the Oxford comma: "I had eggs, toast and orange juice for breakfast."
+> Correct usage with the Oxford comma: "**I had eggs, toast, and orange juice for breakfast.**"
+> Usage without the Oxford comma: "**I had eggs, toast and orange juice for breakfast.**"
 
 ---
 # Define Abbreviations Once in abstract and once in manimatter
@@ -109,6 +109,7 @@ Example:
 > In this study, we utilized Magnetic Resonance Imaging (MRI) to examine brain activity. The MRI results indicated...
 
 ---
+# Apostrophe (')
 Certainly! The use of an apostrophe ('), whether before or after the "s," indicates possession or a contraction.
 
 1. **Reviewers:**
@@ -128,6 +129,8 @@ Certainly! The use of an apostrophe ('), whether before or after the "s," indica
 > "Reviewers'" indicates joint possession when referring to something collectively possessed by multiple reviewers.
 > "Reviewer's" indicates singular possession, showing that something belongs to a single reviewer.
 
+### Contraction 
+Like "**cannot**" may be wirtten in contracted form as "**can't**", Generally in research writing this type of contractions are avoided.
 
 ---
 # periods (full stops) in a quoted sentence

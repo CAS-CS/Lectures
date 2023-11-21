@@ -1,4 +1,3 @@
-
 # What is Population?
 
 In statistics, population is the entire set of items from which you draw data for a statistical study. 
@@ -200,9 +199,11 @@ For example, in distance 10 miles is twice as long as 5 mile.
 
 ---
 
+
 # Reference
 
-1. [Research Methodology by C R Kothari](https://www.academia.edu/43821533/Research_Methodology_by_C_R_Kothari)
+
+1. [Ch 8 Research Methodology by C R Kothari](https://www.academia.edu/43821533/Research_Methodology_by_C_R_Kothari)
 1. [Ranjit Kumar Research Methodology A Step by Step Guide for Beginers](https://www.academia.edu/33999877/Ranjit_Kumar_Research_Methodology_A_Step_by_Step_G)
 
 

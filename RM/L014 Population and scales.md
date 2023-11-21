@@ -72,14 +72,15 @@ To ensure this, statistical methods such as probability sampling, are used to co
 This will **reduce sampling bias and increase validity. **
 
 
->like exit poll for election prediction
+> like exit poll for election prediction
 
 ---
 # Sampling and Non-sampling errors
 
-**Sampling error** is one which occurs due to unrepresentativeness of the sample selected for observation. 
+**Sampling error** is one which occurs due to unrepresentativeness of the sample selected for observation.   
 
-**non-sampling** error is an error arise from human error, such as error in problem identification, method or procedure used, etc.
+
+**Non-sampling** error is an error arise from human error, such as error in problem identification, method or procedure used, etc.
 
 
 ---
@@ -109,17 +110,17 @@ Each level of measurement has some important properties that are useful to know.
 ---
 
 
-**Properties of Measurement Scales:**
+# Properties of Measurement Scales:
 
-*   **Identity –** Each value on the measurement scale has a unique meaning.
+- **Identity –** Each value on the measurement scale has a unique meaning.
 
-*   **Magnitude –** Values on the measurement scale have an ordered relationship to one another. 
+- **Magnitude –** Values on the measurement scale have an ordered relationship to one another. 
     >some values are larger and some are smaller.
 
-*   **Equal intervals –** Scale units along the scale are equal to one another. 
-    >*The difference between 1 and 2 would be equal to the difference between 11 and 12.*
+- **Equal intervals –** Scale units along the scale are equal to one another. 
+> *The difference between 1 and 2 would be equal to the difference between 11 and 12.*
 
-*   **A minimum value of zero –** The scale has a true zero point, below which no values exist.
+- **A minimum value of zero –** The scale has a true zero point, below which no values exist.
 ---
 # Levels of Measurements
 ## **1\. Nominal Scale **  
@@ -150,7 +151,7 @@ The ordinal scale has the property of both **identity and magnitude.**
 ## **3\. Interval Scale**  
 An interval scale has ordered numbers with meaningful divisions, the magnitude between the consecutive intervals are equal. 
 
->*Interval scales do not have a true zero i.e In Celsius 0 degrees does not mean the absence of heat.*
+> *Interval scales do not have a true zero i.e In Celsius 0 degrees does not mean the absence of heat.*
 
 Interval scales have the properties of:
 

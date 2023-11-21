@@ -12,7 +12,7 @@ Measures of central tendency are statistical measures that describe the center o
 
 1. **Mean:**
 - The mean, often referred to as the average, is calculated by summing up all the values in a data set and then dividing by the number of values.
-- Formula: \[ \text{Mean} (\bar{x}) = \frac{\sum_{i=1}^{n} x_i}{n} \]
+- Formula: \[ \text{Mean} (\bar{X}) = \frac{\sum^n_{i=1} x_i}{n} \]
 - Where \(\bar{x}\) is the mean, \(x_i\) is each individual value, and \(n\) is the number of values.
 
 2. **Median:**

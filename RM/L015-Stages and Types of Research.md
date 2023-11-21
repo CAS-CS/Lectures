@@ -19,17 +19,17 @@
 ---
 
 # Important factors to consider:
-* Avoide researchers bias
+- Avoide researchers bias
 
-* Data access, ownership, usage rights and restrictions. 
+- Data access, ownership, usage rights and restrictions. 
 
-* Time & other limited resources. ***Plan your timeline for different stages of research***
+- Time & other limited resources. ***Plan your timeline for different stages of research***
 
-* Validity and reliability of the data: careful experimental recordings, no data tampering.
+- Validity and reliability of the data: careful experimental recordings, no data tampering.
 
-* Ethical issues:
-      1. No harm to nature, plants, animals or humans.
-      1. Plagarisim, self-plagarisim, proper citation.
+- Ethical issues:
+   1. No harm to nature, plants, animals or humans.
+   1. Plagarisim, self-plagarisim, proper citation.
 
 
 
@@ -64,10 +64,10 @@ No matter the type of research, *the data gathered will be as numbers or descrip
 
 * **However, study of human behaviour for *specific social or business problem*,** 
 ie:
-   1. Facebook addictive behaviour analysis, 
-   1. Amazon shopping pattern analysis, etc.
+1. Facebook addictive behaviour analysis, 
+1. Amazon shopping pattern analysis, etc.
     
-   * The study of human behaviour **to apply it for specific purpose** is considered as **Applied research**
+> The study of human behaviour **to apply it for specific purpose** is considered as **Applied research**
 
 
 
@@ -76,7 +76,7 @@ ie:
 # Applied research
 
 Applied research aims at **finding a solution for an immediate problem** facing a society or an industrial/business organisation. ie.
-  * Corona Vaccination.
+* Corona Vaccination.
 
 1. Limited time
 1. The central aim of applied research is to discover a solution for some pressing practical problem.
@@ -85,7 +85,8 @@ Applied research aims at **finding a solution for an immediate problem** facing 
 
 
 ---
-#   Descriptive vs. Analytical
+#   Descriptive vs Analytical
+
 | Descriptive |  Analytical|
 |:---| :---|
 | -  | |
@@ -100,11 +101,11 @@ Applied research aims at **finding a solution for an immediate problem** facing 
 ---
 # Conceptual vs Emperical
 
-* ***Conceptual research*** is related to some abstract idea(s) or theory.
-      * Generally used by thinkers and philosophers, to develop new concepts or to reinterpret existing ones.
+- ***Conceptual research*** is related to some abstract idea(s) or theory.
+    * Generally used by thinkers and philosophers, to develop new concepts or to reinterpret existing ones.
 
-* ***Emperical research*** relies on experience or observetion alone, often without due regard for system theory.
-      * It is based on data and can be varified by observation or experiment.
+- ***Emperical research*** relies on experience or observetion alone, often without due regard for system theory.
+    * It is based on data and can be varified by observation or experiment.
 
 
 ---
@@ -113,17 +114,17 @@ Applied research aims at **finding a solution for an immediate problem** facing 
 
 # Qualitative
 
- Qualitative research involves **collecting and analyzing** written or spoken words and textual data. 
+Qualitative research involves **collecting and analyzing** written or spoken words and textual data. 
 
- It may also focus on body language or visual elements and help to create a detailed description of a researcher's observations. 
+It may also focus on body language or visual elements and help to create a detailed description of a researcher's observations. 
 
-  Researchers usually gather qualitative data through **interviews, observation** and focus groups using a few carefully chosen participants.
+Researchers usually gather qualitative data through **interviews, observation** and focus groups using a few carefully chosen participants.
 
-   This research methodology is **subjective and more time-consuming** than using quantitative data. 
+This research methodology is **subjective and more time-consuming** than using quantitative data. 
 
- Researchers often use a qualitative methodology when the aims and objectives of the research are **exploratory**. 
+Researchers often use a qualitative methodology when the aims and objectives of the research are **exploratory**. 
  
- *For example*, **when they perform research to understand human perceptions regarding an event, person or product.**
+*For example*, **when they perform research to understand human perceptions regarding an event, person or product.**
 
 
 

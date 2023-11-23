@@ -105,18 +105,7 @@ Kurtosis is a statistical measure that describes the distribution of data in a d
 
 
 
-<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Draw histogram bars representing a dataset with different kurtosis -->
-  <rect x="50" y="150" width="50" height="20" fill="#ff0000" />
-  <rect x="120" y="120" width="50" height="50" fill="#ff6600" />
-  <rect x="190" y="100" width="50" height="70" fill="#ffff00" />
-  <rect x="260" y="80" width="50" height="100" fill="#66ff66" />
-  <rect x="330" y="50" width="50" height="130" fill="#0066ff" />
-  
-  <!-- Add axis labels -->
-  <text x="50" y="180" font-family="Arial" font-size="12" fill="black">Low Kurtosis</text>
-  <text x="330" y="180" font-family="Arial" font-size="12" fill="black">High Kurtosis</text>
-</svg>
+![](./L012_03.webp)
 
 
 In this example, each plot represents a dataset with different levels of kurtosis. 

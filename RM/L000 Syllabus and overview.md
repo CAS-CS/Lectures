@@ -1,5 +1,5 @@
-Research Methodology& Technical Writing
-MMTR 301 
+# Research Methodology & Technical Writing  
+### MCSC-201 / MMTA-301 / EST-303 / MMTR-301
 
 ## Research Methodology:
 Research process, types of research, problem identification and hypothesis formulation, Research design, methods of data collection, reliability and validity, data presentation, and report preparation.
@@ -16,7 +16,7 @@ Introduction to terminology, concept of research. Preparing research proposal/ S
 # Books 
 - Ranjit Kumar, Research methodology: a step-by-step guide for beginners, SAGE Publications India Pvt Ltd.
 - C.R. Kothari, Research Methodology: Methods and Techniques, New Age International, 2004.
-Michael H. Markel,Handbook of Technical writing, Bedford/St Martins, 2012
+- Michael H. Markel,Handbook of Technical writing, Bedford/St Martins, 2012
 - Thomas N. Huckin, Technical Writing and Professional Communication: For Non-native Speakers of English, McGraw Hill, 1991.
 - Michael H. Markel,Technical Writing Essentials. St. Martin's Press, 1988.
 - Sharon J Gerson, Steven M Gerson,Technical writing: Process and product, Fifth edition, Pearson Education, 2006

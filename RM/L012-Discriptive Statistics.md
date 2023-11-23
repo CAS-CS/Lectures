@@ -2,9 +2,12 @@
 # Discriptive Statistics
 
 #### Measure of Central Tendency
+
 #### Measure of Dispersion
+
 #### Measure of Skewness
-#### kurtosis and covariance
+
+#### Kurtosis, Covariance, and Correlation
 
 
 ---
@@ -93,6 +96,30 @@ in case $Z$ is ill-defined or not defined
 
 $$ S_k=\frac{3(\overline{X}-M)}{\sigma}$$
 
+---
+# Kurtosis
+
+Kurtosis is a statistical measure that describes the distribution of data in a dataset. It indicates the "tailedness" of the data distribution - how much data is in the tails or extreme values compared to a normal distribution. 
+
+> The tails of the distribution will give you an indication of how the kurtosis value affects the shape of the distribution.
+
+
+
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Draw histogram bars representing a dataset with different kurtosis -->
+  <rect x="50" y="150" width="50" height="20" fill="#ff0000" />
+  <rect x="120" y="120" width="50" height="50" fill="#ff6600" />
+  <rect x="190" y="100" width="50" height="70" fill="#ffff00" />
+  <rect x="260" y="80" width="50" height="100" fill="#66ff66" />
+  <rect x="330" y="50" width="50" height="130" fill="#0066ff" />
+  
+  <!-- Add axis labels -->
+  <text x="50" y="180" font-family="Arial" font-size="12" fill="black">Low Kurtosis</text>
+  <text x="330" y="180" font-family="Arial" font-size="12" fill="black">High Kurtosis</text>
+</svg>
+
+
+In this example, each plot represents a dataset with different levels of kurtosis. 
 ---
 # Measure of relationship: covariance and correlation
 

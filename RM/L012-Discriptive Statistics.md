@@ -15,7 +15,7 @@ Measures of central tendency are statistical measures that describe the center o
 
 1. **Mean:**
 - The mean, often referred to as the average, is calculated by summing up all the values in a data set and then dividing by the number of values.
-- Formula: \[ \text{Mean} (\bar{X}) = \frac{\sum^n_{i=1} x_i}{n} \]
+- Formula: \[ \text{Mean} (\bar{X}) = \frac{\sum\limits^n_{i=1} x_i}{n} \]
 - Where \(\bar{x}\) is the mean, \(x_i\) is each individual value, and \(n\) is the number of values.
 
 2. **Median:**
@@ -117,7 +117,7 @@ Covariance and correlation are measures that describe the relationship between t
 1. **Covariance:**
 - **Definition:** Covariance measures the degree to which two variables vary together. It indicates the direction of the linear relationship between the variables.
 - **Formula:** 
-     \[ \text{Cov}(X, Y) = \frac{\sum_{i=1}^{n} (X_i - \bar{X})(Y_i - \bar{Y})}{n} \]
+     \[ \text{Cov}(X, Y) = \frac{\sum\limits_{i=1}^{n} (X_i - \bar{X})(Y_i - \bar{Y})}{n} \]
      Where \(X_i\) and \(Y_i\) are individual data points, \(\bar{X}\) and \(\bar{Y}\) are the means of \(X\) and \(Y\), and \(n\) is the number of data points.
 - **Interpretation:** 
 - Positive covariance indicates a direct relationship (both variables increase or decrease together).

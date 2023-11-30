@@ -77,18 +77,18 @@ This will **reduce sampling bias and increase validity. **
 ---
 # Sampling and Non-sampling errors
 
-**Sampling error** is one which occurs due to unrepresentativeness of the sample selected for observation.   
-
-
-**Non-sampling** error is an error arise from human error, such as error in problem identification, method or procedure used, etc.
-
-
----
-An ideal research design seeks to control various types of error, but there are some potential sources which may affect it. 
+> An ideal research design seeks to control various types of error, but there are some potential sources which may affect it. 
 
 In sampling theory, total error can be defined as the variation between the mean value of population parameter and the observed mean value obtained in the research. 
 
-The total error can be classified into two categories, i.e. sampling error and non-sampling error.
+- The total error can be classified into two categories, i.e. sampling error and non-sampling error.
+
+### Sampling error 
+Sampling error is an error which occurs due to unrepresentativeness of the sample selected for observation.   
+
+
+### Non-sampling
+Non-sampling error is an error arise from human error, such as error in problem identification, method or procedure used, etc.
 
 
 ---
@@ -105,10 +105,7 @@ There are four different scales of measurement.
 
 Nominal Scale | Ordinal Scale | Interval Scale | Ratio Scale
 
-Each level of measurement has some important properties that are useful to know.
-
----
-
+Each level of measurement has some important properties that are useful to know
 
 # Properties of Measurement Scales:
 

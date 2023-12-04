@@ -43,7 +43,7 @@ We usually use a definition of return that is slightly more complex conceptually
 ### Discounting
 
 The additional concept that we need is that of *discounting*.
-$$G_t=R_{t+1}+\gamma R_{t+2}+\gamma^2 R_{t+3}+\ldots = \sum\limit_{k=0}^\infty R_{t+k+1}$$
+$$G_t=R_{t+1}+\gamma R_{t+2}+\gamma^2 R_{t+3}+\ldots = \sum\limits_{k=0}^\infty R_{t+k+1}$$
 where $\gamma$ is a parameter, $0\leq\gamma\leq1$, called the *discount rate*.
 
 
@@ -57,7 +57,7 @@ $$G_t=&R_{t+1}+\gamma R_{t+2}+\gamma^2 R_{t+3}+\gamma^3 R_{t+4}+\ldots\\=&R_{t+1
 
 Note that although the return is a sum of an infinite number of terms, it is still finite if the reward is nonzero and constant -- if $\gamma<1$. For example, if the reward is a constant $+1$, then the return is
 
-$$G_t=\sum\limit_{k=0}^\infty \gamma^k = \frac{1}{1-\gamma}$$
+$$G_t=\sum\limits_{k=0}^\infty \gamma^k = \frac{1}{1-\gamma}$$
 
 
 ---

@@ -17,7 +17,7 @@ episode. Starting from $S_0$ , we get the reward sequence $+1, +1, +1, 0, 0, 0, 
 these, we get the same return whether we sum over the first $T$ rewards (here $T=3$) or
 over the full infinite sequence. This remains true even if we introduce discounting.
 
-$$G_t=\sum\limit_{k=t+1}^T\gamma^{k-t-1}R_k$$
+$$G_t=\sum\limits_{k=t+1}^T\gamma^{k-t-1}R_k$$
 
 We can write $G_t$ thereby including possibility that $T=\infty$ or $\gamma=1$ **(but not both)**.
 
@@ -43,8 +43,8 @@ its experience.
 The value function of a state $s$ under a policy $\pi$, denoted $v_\pi(s), is the expected return
 when starting in $s$ and following $\pi$ thereafter. For MDPs, we can define $v_\pi$ formally by
 
-$$v_\pi(s)=\mathbb{E}_\pi[G_t|S_t=s]=\mathbb{E}_\pi\left[\left.\sum\limit_{k=0}^\infty\gamma^kR_{t+k+1\right| S_t=s\right]$$
-for all $s\inS$ where $\mathbb{E}_\pi[\cdot]$ denotes the expected value of a random variable given that the agent follows policy $\pi$, and $t$ is any time step.
+$$v_\pi(s)=\mathbb{E}_\pi[G_t|S_t=s]=\mathbb{E}_\pi\left[\left.\sum\limits_{k=0}^\infty\gamma^kR_{t+k+1\right| S_t=s\right]$$
+for all $s\in S$ where $\mathbb{E}_\pi[\cdot]$ denotes the expected value of a random variable given that the agent follows policy $\pi$, and $t$ is any time step.
 
 > The value of the terminal state, if any, is always zero. 
 
@@ -58,7 +58,7 @@ $q_\pi(s, a)$, as the expected return starting from $s$, taking the action $a$, 
 following policy $\pi$:
 
 
-$$q_\pi(s,a)=\mathbb{E}_\pi[G_t|S_t=s,A_t=a]=\mathbb{E}_\pi\left[\left.\sum\limit_{k=0}^\infty\gamma^kR_{t+k+1\right| S_t=s,A_t=a\right]$$
+$$q_\pi(s,a)=\mathbb{E}_\pi[G_t|S_t=s,A_t=a]=\mathbb{E}_\pi\left[\left.\sum\limits_{k=0}^\infty\gamma^kR_{t+k+1\right| S_t=s,A_t=a\right]$$
 
 We call $q_\pi$ the *action-value function* for policy $\pi$.
 
@@ -72,7 +72,7 @@ A fundamental property of value functions used throughout reinforcement learning
 
 For any policy $\pi$ and any state $s$, the following consistency condition holds between the value of s and the value of its possible successor states:
 
-$$v_\pi(s)=&\mathbb{E}_\pi[G_t|S_t=s]\\=&\mathbb{E}_\pi\left[\left.\sum\limit_{k=0}^\infty\gamma^kR_{t+k+1\right| S_t=s\right]\\=&\sum\limit_a\pi(a|s)\sum\limit_{s'}\sum\limit_{a}p(s',r|s,a)\left[r+\gamma\mathbb{E}_\pi\left[G_{t+1}|S_{t+1}=s'\right]\right]\\=&\sum\limit_a\pi(a|s)\sum\limit_{s',a}p(s',r|s,a)\left[r+\gamma v_\pi(s')\right], \text{for all} s\in S$$
+$$v_\pi(s)=&\mathbb{E}_\pi[G_t|S_t=s]\\=&\mathbb{E}_\pi\left[\left.\sum\limits_{k=0}^\infty\gamma^kR_{t+k+1\right| S_t=s\right]\\=&\sum\limits_a\pi(a|s)\sum\limits_{s'}\sum\limits_{a}p(s',r|s,a)\left[r+\gamma\mathbb{E}_\pi\left[G_{t+1}|S_{t+1}=s'\right]\right]\\=&\sum\limits_a\pi(a|s)\sum\limits_{s',a}p(s',r|s,a)\left[r+\gamma v_\pi(s')\right], \text{for all} s\in S$$
 
 It is a sum over all values of the three variables, $a$, $s'$, and $r$. For each triple, we compute its probability, $\pi(a|s)p(s',r|s,a)$, weight the quantity in brackets by that probability, then sum over all possibilities to get an expected value.
 

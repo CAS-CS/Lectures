@@ -85,7 +85,7 @@ The Bellman equation averages over all the possibilities, weighting each by its 
 
 ![](./L11_02.png)
 
-Diagrams like that above are called *backup diagrams*, because they driagram relationships that form the basis of the update or *backup* operations that are at the heart of reinforcement learning methods. These operations transfer value information *back* to a state(or a state-action pair) from its successor states(or state-action pairs).
+Diagrams like that above are called *backup diagrams*, because they diagram relationships that form the basis of the update or *backup* operations that are at the heart of reinforcement learning methods. These operations transfer value information *back* to a state(or a state-action pair) from its successor states(or state-action pairs).
 
 
 ---

@@ -79,3 +79,10 @@ where $\alpha$ is a small positive fraction called the step-size parameter, whic
 - This example illustrates the differences between evolutionary methods and methods that learn value functions. 
 - To evaluate a policy an evolutionary method holds the policy fixed and plays many games against the opponent, or simulates many games using a model of the opponent. 
 - The frequency of wins gives an unbiased estimate of the probability
+
+
+
+---
+# References
+
+- ["Reinforcement Learning: An Introduction", Richard S. Sutton and Andrew G. Barto, 2nd Edition.](https://inst.eecs.berkeley.edu/~cs188/sp20/assets/files/SuttonBartoIPRLBook2ndEd.pdf)

@@ -86,3 +86,8 @@ $$ p(s'| s,a)= Pr\{S_t=s'|\ S_{t-1}=s,\ A_{t-1}=a\} = \sum_{r\in\mathbf{R}}p(s',
 A Mobile Robot Example
 ![](./L09_Example3.3.png)
 
+
+---
+# References
+
+- ["Reinforcement Learning: An Introduction", Richard S. Sutton and Andrew G. Barto, 2nd Edition.](https://inst.eecs.berkeley.edu/~cs188/sp20/assets/files/SuttonBartoIPRLBook2ndEd.pdf)

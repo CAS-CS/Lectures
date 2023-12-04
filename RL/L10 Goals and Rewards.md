@@ -30,7 +30,7 @@ This makes sense in applications in which there is a natural notion of final tim
 The next episode begins independently of how the previous one ended. Thus the episodes can all be considered to end in the same terminal state, with different rewards for the different outcomes. Tasks with episodes of this kind are called *episodic tasks*. 
 
 > In episodic tasks we sometimes need to distinguish the set of all nonterminal states, denoted $\math{S}$, from the set of all states plus the terminal state, denoted $\math{S}+$ . The time of termination, $T$, is a random variable that normally varies from episode to episode.
-
+---
 # Returns and Episodes
 ## Continious cases and discounting
 
@@ -53,7 +53,7 @@ The discount rate determines the present value of future rewards: a reward recei
 
 Returns at successive time steps are related to each other in a way that is important for the theory and algorithms of reinforcement learning:
 
-$$G_t=&R_{t+1}+\gamma R_{t+2}+\gamma^2 R_{t+3}+\gamma^3 R_{t+4}+\ldots\\=&R_{t+1}+\gamma (R_{t+2}+\gamma R_{t+3}+\gamma^2 R_{t+4}+\ldots)\\=&R_{t+1}+\gamma G_{t+1}$$
+$$\begin{aligned}G_t=&R_{t+1}+\gamma R_{t+2}+\gamma^2 R_{t+3}+\gamma^3 R_{t+4}+\ldots\\=&R_{t+1}+\gamma (R_{t+2}+\gamma R_{t+3}+\gamma^2 R_{t+4}+\ldots)\\=&R_{t+1}+\gamma G_{t+1}\end{aligned}$$
 
 Note that although the return is a sum of an infinite number of terms, it is still finite if the reward is nonzero and constant -- if $\gamma<1$. For example, if the reward is a constant $+1$, then the return is
 

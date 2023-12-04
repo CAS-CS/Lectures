@@ -7,3 +7,6 @@
 ./L05 Multi-armed Bandits.md
 ./L08 UCB and GBA.md
 ./L09 MDP.md
+./L10 Goals and Rewards.md
+./L11 Unified Notation for Returns, Polity and Value functions.md
+./L12 Optimal Policies and Optimal Value Functions.md

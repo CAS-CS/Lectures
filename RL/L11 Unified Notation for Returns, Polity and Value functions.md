@@ -25,6 +25,79 @@ We can write $G_t$ thereby including possibility that $T=\infty$ or $\gamma=1$ *
 
 # Policies and Value Functions
 
+> Almost all reinforcement learning algorithms involve estimating value functions—functions of states (or of state–action pairs) that estimate how good it is for the agent to be in a given state (or how good it is to perform a given action in a given state). The notion of “how good” here is defined in terms of future rewards that can be expected, or, to be precise, in terms of expected return. Of course the rewards the agent can expect to receive in the future depend on what actions it will take. Accordingly, value functions are defined with respect to particular ways of acting, called policies.
+
+
+---
+### Policy
+A *policy* is a mapping from states to probabilities of selecting each possible
+action. If the agent is following policy $\pi$ at time $t$, then $\pi(a|s)$ is the probability that
+$A_t = a$ if $S_t = s$. Like $p$, $\pi$ is an ordinary function; the “|” in the middle of $\pi(a|s)$ merely reminds that it defines a probability distribution over $a\in A(s)$ for each $s\in S$.
+Reinforcement learning methods specify how the agent’s policy is changed as a result of
+its experience.
+
+
+---
+# Value function
+### State-value $v_\pi(s)$
+The value function of a state $s$ under a policy $\pi$, denoted $v_\pi(s), is the expected return
+when starting in $s$ and following $\pi$ thereafter. For MDPs, we can define $v_\pi$ formally by
+
+$$v_\pi(s)=\mathbb{E}_\pi[G_t|S_t=s]=\mathbb{E}_\pi\left[\left.\sum\limit_{k=0}^\infty\gamma^kR_{t+k+1\right| S_t=s\right]$$
+for all $s\inS$ where $\mathbb{E}_\pi[\cdot]$ denotes the expected value of a random variable given that the agent follows policy $\pi$, and $t$ is any time step.
+
+> The value of the terminal state, if any, is always zero. 
+
+We call the function $v_\pi$ the *state-value function* for policy $\pi$.
+
+### Action-value $q_\pi(s,a)$
+
+
+Similarly, we define the value of taking action $a$ in state $s$ under a policy $\pi$, denoted
+$q_\pi(s, a)$, as the expected return starting from $s$, taking the action $a$, and thereafter
+following policy $\pi$:
+
+
+$$q_\pi(s,a)=\mathbb{E}_\pi[G_t|S_t=s,A_t=a]=\mathbb{E}_\pi\left[\left.\sum\limit_{k=0}^\infty\gamma^kR_{t+k+1\right| S_t=s,A_t=a\right]$$
+
+We call $q_\pi$ the *action-value function* for policy $\pi$.
+
+> The value functions $v_\pi$ and $q_\pi$ can be estimated from experience.
+
+
+---
+# Bellman Equation
+
+A fundamental property of value functions used throughout reinforcement learning and dynamic programming is that they satisfy recursive relationships. 
+
+For any policy $\pi$ and any state $s$, the following consistency condition holds between the value of s and the value of its possible successor states:
+
+$$v_\pi(s)=&\mathbb{E}_\pi[G_t|S_t=s]\\=&\mathbb{E}_\pi\left[\left.\sum\limit_{k=0}^\infty\gamma^kR_{t+k+1\right| S_t=s\right]\\=&\sum\limit_a\pi(a|s)\sum\limit_{s'}\sum\limit_{a}p(s',r|s,a)\left[r+\gamma\mathbb{E}_\pi\left[G_{t+1}|S_{t+1}=s'\right]\right]\\=&\sum\limit_a\pi(a|s)\sum\limit_{s',a}p(s',r|s,a)\left[r+\gamma v_\pi(s')\right], \text{for all} s\in S$$
+
+It is a sum over all values of the three variables, $a$, $s'$, and $r$. For each triple, we compute its probability, $\pi(a|s)p(s',r|s,a)$, weight the quantity in brackets by that probability, then sum over all possibilities to get an expected value.
+
+The Bellman equation averages over all the possibilities, weighting each by its probability of occurring. It states that the value of the start state must equal the (discounted) value of the expected next state, plus the reward expected along the way.
+
+---
+
+# Backup diagram
+
+![](./L11_02.png)
+
+Diagrams like that above are called *backup diagrams*, because they driagram relationships that form the basis of the update or *backup* operations that are at the heart of reinforcement learning methods. These operations transfer value information *back* to a state(or a state-action pair) from its successor states(or state-action pairs).
+
+
+---
+![](./L11_03.png)
+
+
+- policy $\pi$ random, each action(left,right,top,bottom) equal probability (0.25).
+- discounting faction $\gamma=0.9$.
+- The values are computed by solving the system of linear equations (bellman equation at each state).
+---
+# References
+
+- ["Reinforcement Learning: An Introduction", Richard S. Sutton and Andrew G. Barto, 2nd Edition.](https://inst.eecs.berkeley.edu/~cs188/sp20/assets/files/SuttonBartoIPRLBook2ndEd.pdf)
 
 
 

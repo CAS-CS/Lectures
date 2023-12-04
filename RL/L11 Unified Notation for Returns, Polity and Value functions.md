@@ -1,9 +1,7 @@
 # Unified Notation for Episodic and Continuing Tasks
 
 
-Episodic tasks requires some additional notation. Rather than one long sequence of time steps, we need to consider a series of episodes, each of which consists of a finite sequence of time steps.
-
-We have to refer not just to $S_t$ , the state representation at time $t$, but to $S_{t,i}$ , the state representation at time $t$ of episode $i$ (and similarly for $A_{t,i}$,
+Episodic tasks requires some additional notation. Rather than one long sequence of time steps, we need to consider a series of episodes, each of which consists of a finite sequence of time steps. We have to refer not just to $S_t$ , the state representation at time $t$, but to $S_{t,i}$ , the state representation at time $t$ of episode $i$ (and similarly for $A_{t,i}$,
 $R_{t,i}$, $\pi_{t,i}$, $T_{i}$ , etc.). 
 > For simplicity we write $S_t$ to refer to $S_{t,i}$ , and so on.
 
@@ -43,7 +41,7 @@ its experience.
 The value function of a state $s$ under a policy $\pi$, denoted $v_\pi(s), is the expected return
 when starting in $s$ and following $\pi$ thereafter. For MDPs, we can define $v_\pi$ formally by
 
-$$\begin{aligned}v_\pi(s)=\mathbb{E}_\pi[G_t|S_t=s]=\mathbb{E}_\pi\left[\left.\sum\limits_{k=0}^\infty\gamma^kR_{t+k+1\right| S_t=s\right]\end{aligned}$$
+$$\begin{aligned} v_\pi(s) =& \mathbb{E}_\pi[G_t|S_t=s]\\ =& \mathbb{E}_\pi \left[\left. \sum\limits_{k=0}^\infty \gamma^k R_{t+k+1\right | S_t=s\right] \end{aligned}$$
 for all $s\in S$ where $\mathbb{E}_\pi[\cdot]$ denotes the expected value of a random variable given that the agent follows policy $\pi$, and $t$ is any time step.
 
 > The value of the terminal state, if any, is always zero. 
@@ -58,7 +56,7 @@ $q_\pi(s, a)$, as the expected return starting from $s$, taking the action $a$, 
 following policy $\pi$:
 
 
-$$q_\pi(s,a)=\mathbb{E}_\pi[G_t|S_t=s,A_t=a]=\mathbb{E}_\pi\left[\left.\sum\limits_{k=0}^\infty\gamma^kR_{t+k+1\right| S_t=s,A_t=a\right]$$
+$$q_\pi(s,a) = \mathbb{E}_\pi[G_t|S_t=s,A_t=a] = \mathbb{E}_\pi \left[\left. \sum\limits_{k=0}^\infty\gamma^k R_{t+k+1\right| S_t=s,A_t=a\right]$$
 
 We call $q_\pi$ the *action-value function* for policy $\pi$.
 
@@ -72,7 +70,10 @@ A fundamental property of value functions used throughout reinforcement learning
 
 For any policy $\pi$ and any state $s$, the following consistency condition holds between the value of s and the value of its possible successor states:
 
-$$\begin{aligned}v_\pi(s)=&\mathbb{E}_\pi[G_t|S_t=s]\\=&\mathbb{E}_\pi\left[\left.\sum\limits_{k=0}^\infty\gamma^kR_{t+k+1\right| S_t=s\right]\\=&\sum\limits_a\pi(a|s)\sum\limits_{s'}\sum\limits_{a}p(s',r|s,a)\left[r+\gamma\mathbb{E}_\pi\left[G_{t+1}|S_{t+1}=s'\right]\right]\\=&\sum\limits_a\pi(a|s)\sum\limits_{s',a}p(s',r|s,a)\left[r+\gamma v_\pi(s')\right], \text{for all} s\in S\end{aligned}$$
+$$\begin{aligned} v_\pi(s) =& \mathbb{E}_\pi[G_t|S_t=s]\\
+=& \mathbb{E}_\pi \left[\left. \sum\limits_{k=0}^\infty\gamma^k R_{t+k+1\right | S_t=s \right]\\
+=& \sum\limits_a\pi(a|s)\sum\limits_{s'}\sum\limits_{a}p(s',r|s,a)\left[r+\gamma \mathbb{E}_\pi\left[ G_{t+1} | S_{t+1} = s' \right]\right]\\
+=&\sum\limits_a\pi(a|s) \ sum\limits_{s',a} p(s',r|s,a) \left[r + \gamma v_\pi(s') \right], \text{for all} s\in S\end{aligned}$$
 
 It is a sum over all values of the three variables, $a$, $s'$, and $r$. For each triple, we compute its probability, $\pi(a|s)p(s',r|s,a)$, weight the quantity in brackets by that probability, then sum over all possibilities to get an expected value.
 
@@ -92,7 +93,7 @@ Diagrams like that above are called *backup diagrams*, because they driagram rel
 
 
 - Policy $\pi$ random, each action(left,right,top,bottom) equal probability $(0.25)$.
-- Discounting faction $\gamma=0.9$.
+- Discounting factor $\gamma=0.9$.
 - The values are computed by solving the system of linear equations (bellman equation at each state).
 ---
 # References

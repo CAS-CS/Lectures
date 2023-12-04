@@ -29,7 +29,7 @@ This makes sense in applications in which there is a natural notion of final tim
 
 The next episode begins independently of how the previous one ended. Thus the episodes can all be considered to end in the same terminal state, with different rewards for the different outcomes. Tasks with episodes of this kind are called *episodic tasks*. 
 
-> In episodic tasks we sometimes need to distinguish the set of all nonterminal states, denoted $\math{S}$, from the set of all states plus the terminal state, denoted $\math{S}+$ . The time of termination, $T$, is a random variable that normally varies from episode to episode.
+> In episodic tasks we sometimes need to distinguish the set of all nonterminal states, denoted $\mathbf{S}$, from the set of all states plus the terminal state, denoted $\mathbf{S}+$ . The time of termination, $T$, is a random variable that normally varies from episode to episode.
 ---
 # Returns and Episodes
 ## Continious cases and discounting
@@ -46,8 +46,8 @@ The additional concept that we need is that of *discounting*.
 $$G_t=R_{t+1}+\gamma R_{t+2}+\gamma^2 R_{t+3}+\ldots = \sum\limits_{k=0}^\infty R_{t+k+1}$$
 where $\gamma$ is a parameter, $0\leq\gamma\leq1$, called the *discount rate*.
 
-
-The discount rate determines the present value of future rewards: a reward received $k$ time steps in the future is worth only $\gamma^{k-1}$ times what it would be worth if it were received immediately. If $\gamma<1$, the infinite sum in $G_t$ has a finite value as long as the reward sequence $\{Rk\}$ is bounded. If $\gamma=0$, the agent is ``myopic" in being concerned only with maximizing immediate rewards: its objective in this case is to learn how to choose $A_t$ so as to maximize only $R_{t+1}$
+---
+The discount rate determines the present value of future rewards: a reward received $k$ time steps in the future is worth only $\gamma^{k-1}$ times what it would be worth if it were received immediately. If $\gamma<1$, the infinite sum in $G_t$ has a finite value as long as the reward sequence $\{R_k\}$ is bounded. If $\gamma=0$, the agent is ``myopic" in being concerned only with maximizing immediate rewards: its objective in this case is to learn how to choose $A_t$ so as to maximize only $R_{t+1}$
 
 > Acting to maximize immediate reward can reduce access to future rewards so that the return is reduced. As $\gamma$ approaches 1, the return objective takes future rewards into account more strongly; the agent becomes more farsighted.
 

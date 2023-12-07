@@ -7,12 +7,12 @@ A policy $\pi$ is defined to be better than or equal to a policy $\pi$ $\pi '$ i
 
 We denote all the *optimal policies* by $\pi_*$. They share the same state-value function, called the *optimal state-value* function, denoted $v_*$, and defined as
 
-$$v_*(s)=max\limits_\pi v_\pi(s)$$
+$$v_*(s)=\max\limits_\pi v_\pi(s)$$
 for all $s \in \mathcal{S}$
 
 Optimal policies also share the same optimal action-value function, denoted $q*$, and
 defined as.
-$$q*(s, a) = max\limits_\pi q_\pi(s, a)$$,
+$$q*(s, a) = \max\limits_\pi q_\pi(s, a)$$,
 for all $s\in \mathcal{S}$ and $a\in A(s)$.
 
 
@@ -30,11 +30,11 @@ Because $v_*$ is the value function for a policy, it must satisfy the self-consi
 
 $$
 \begin{aligned}
-v_*(s)=&max\limit_{a\in A(s)} q_{\pi_*}(s,a)\\
-=&max\limit_{a}\mathbb{E}_{\pi_*}\left[G_t|S_t=a,A_t=a\right]\\
-=&max\limit_{a}\mathbb{E}_{\pi_*}\left[R_{t+1}+\gamma G_{t+1}|S_t=a,A_t=a\right]\\
-=&max\limit_{a}\mathbb{E}_{\pi_*}\left[R_{t+1}+\gamma v_*(S_{t+1})|S_t=a,A_t=a\right]\\
-=&max\limit_{a}\sum\limits_{s',r}p(s',r|s,a)[r+\gamma v_*(s')]
+v_*(s)=&\max\limit_{a\in A(s)} q_{\pi_*}(s,a)\\
+=&\max\limit_{a}\mathbb{E}_{\pi_*}\left[G_t|S_t=a,A_t=a\right]\\
+=&\max\limit_{a}\mathbb{E}_{\pi_*}\left[R_{t+1}+\gamma G_{t+1}|S_t=a,A_t=a\right]\\
+=&\max\limit_{a}\mathbb{E}_{\pi_*}\left[R_{t+1}+\gamma v_*(S_{t+1})|S_t=a,A_t=a\right]\\
+=&\max\limit_{a}\sum\limits_{s',r}p(s',r|s,a)[r+\gamma v_*(s')]
 \end{aligned}
 $$
 
@@ -46,8 +46,8 @@ The Bellman optimality equation for $q_*$ is
 
 $$
 \begin{aligned}
-q_*(s,a)=&\mathbb{E}\left[R_{t+1}+\gamma max\limit_{a'}q_*(S_{t+1},a')|S_t=a,A_t=a\right]\\
-=&\sum\limits_{s',r}p(s',r|s,a)[r+\gamma max\limit_{a'}q_*(S_{t+1},a')]
+q_*(s,a)=&\mathbb{E}\left[R_{t+1}+\gamma \max\limit_{a'}q_*(S_{t+1},a')|S_t=a,A_t=a\right]\\
+=&\sum\limits_{s',r}p(s',r|s,a)[r+\gamma \max\limit_{a'}q_*(S_{t+1},a')]
 \end{aligned}
 $$
 

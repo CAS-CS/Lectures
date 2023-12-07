@@ -10,3 +10,4 @@
 ./L10 Goals and Rewards.md
 ./L11 Unified Notation for Returns, Polity and Value functions.md
 ./L12 Optimal Policies and Optimal Value Functions.md
+./L13 Dynamic Programming.md

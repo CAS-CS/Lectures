@@ -30,11 +30,11 @@ Because $v_*$ is the value function for a policy, it must satisfy the self-consi
 
 $$
 \begin{aligned}
-v_*(s)=&\max\limit_{a\in A(s)} q_{\pi_*}(s,a)\\
-=&\max\limit_{a}\mathbb{E}_{\pi_*}\left[G_t|S_t=a,A_t=a\right]\\
-=&\max\limit_{a}\mathbb{E}_{\pi_*}\left[R_{t+1}+\gamma G_{t+1}|S_t=a,A_t=a\right]\\
-=&\max\limit_{a}\mathbb{E}_{\pi_*}\left[R_{t+1}+\gamma v_*(S_{t+1})|S_t=a,A_t=a\right]\\
-=&\max\limit_{a}\sum\limits_{s',r}p(s',r|s,a)[r+\gamma v_*(s')]
+v_ *(s)=&\max\limits _ {a\in A(s)} q _ {\pi _ *}(s,a)\\
+=&\max\limits _{a}\mathbb{E} _ {\pi _ * }\left[G _ t|S _ t=a,A _ t=a\right]\\
+=&\max\limits _ {a}\mathbb{E} _ {\pi_ * }\left[R_{t+1}+\gamma G _ {t+1}|S _ t=a,A_t=a\right]\\
+=&\max\limits _ {a}\mathbb{E} _ {\pi_ * }\left[R_{t+1}+\gamma v _ * (S _ {t+1})|S _ t=a,A _ t=a\right]\\
+=&\max\limits _ {a}\sum\limits _ {s',r}p(s',r|s,a)[r+\gamma v _ * (s')]
 \end{aligned}
 $$
 
@@ -46,8 +46,8 @@ The Bellman optimality equation for $q_*$ is
 
 $$
 \begin{aligned}
-q_*(s,a)=&\mathbb{E}\left[R_{t+1}+\gamma \max\limit_{a'}q_*(S_{t+1},a')|S_t=a,A_t=a\right]\\
-=&\sum\limits_{s',r}p(s',r|s,a)[r+\gamma \max\limit_{a'}q_*(S_{t+1},a')]
+q_*(s,a)=&\mathbb{E}\left[R_{t+1}+\gamma \max\limits_{a'} q_*(S_{t+1},a')|S_t=a,A_t=a\right]\\
+=&\sum\limits_{s',r}p(s',r|s,a)[r+\gamma \max\limits_{a'} q_*(S_{t+1},a')]
 \end{aligned}
 $$
 

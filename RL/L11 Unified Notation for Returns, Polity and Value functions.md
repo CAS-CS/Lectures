@@ -1,23 +1,23 @@
 # Unified Notation for Episodic and Continuing Tasks
 
 
-Episodic tasks requires some additional notation. Rather than one long sequence of time steps, we need to consider a series of episodes, each of which consists of a finite sequence of time steps. We have to refer not just to $S_t$ , the state representation at time $t$, but to $S_{t,i}$ , the state representation at time $t$ of episode $i$ (and similarly for $A_{t,i}$,
-$R_{t,i}$, $\pi_{t,i}$, $T_{i}$ , etc.). 
-> For simplicity we write $S_t$ to refer to $S_{t,i}$ , and so on.
+Episodic tasks requires some additional notation. Rather than one long sequence of time steps, we need to consider a series of episodes, each of which consists of a finite sequence of time steps. We have to refer not just to $S _ t$ , the state representation at time $t$, but to $S _ {t,i}$ , the state representation at time $t$ of episode $i$ (and similarly for $A _ {t,i}$,
+$R _ {t,i}$, $\pi _ {t,i}$, $T _ {i}$ , etc.). 
+> For simplicity we write $S _ t$ to refer to $S _ {t,i}$ , and so on.
 
 
 To obtain a single notation that covers both episodic and continuing tasks. We have defined the return as a sum over a finite number of terms in one case and as a sum over an infinite number of terms in the other. These two can be unified by considering episode termination to be the entering of a special *absorbing state* that transitions only to itself and that generates only rewards of zero.
 
-![](./L11_01.png)
+![](./L11 _ 01.png)
 
 Here the solid square represents the special absorbing state corresponding to the end of an
-episode. Starting from $S_0$ , we get the reward sequence $+1, +1, +1, 0, 0, 0, . . ..$ Summing
+episode. Starting from $S _ 0$ , we get the reward sequence $+1, +1, +1, 0, 0, 0, . . ..$ Summing
 these, we get the same return whether we sum over the first $T$ rewards (here $T=3$) or
 over the full infinite sequence. This remains true even if we introduce discounting.
 
-$$G_t=\sum\limits_{k=t+1}^T\gamma^{k-t-1}R_k$$
+$$G _ t=\sum\limits _ {k=t+1}^T\gamma^{k-t-1}R _ k$$
 
-We can write $G_t$ thereby including possibility that $T=\infty$ or $\gamma=1$ **(but not both)**.
+We can write $G _ t$ thereby including possibility that $T=\infty$ or $\gamma=1$ **(but not both)**.
 
 ---
 
@@ -30,37 +30,49 @@ We can write $G_t$ thereby including possibility that $T=\infty$ or $\gamma=1$ *
 ### Policy
 A *policy* is a mapping from states to probabilities of selecting each possible
 action. If the agent is following policy $\pi$ at time $t$, then $\pi(a|s)$ is the probability that
-$A_t = a$ if $S_t = s$. Like $p$, $\pi$ is an ordinary function; the “|” in the middle of $\pi(a|s)$ merely reminds that it defines a probability distribution over $a\in A(s)$ for each $s\in S$.
+$A _ t = a$ if $S _ t = s$. Like $p$, $\pi$ is an ordinary function; the “|” in the middle of $\pi(a|s)$ merely reminds that it defines a probability distribution over $a\in A(s)$ for each $s\in S$.
 Reinforcement learning methods specify how the agent’s policy is changed as a result of
 its experience.
 
 
 ---
 # Value function
-### State-value $v_\pi(s)$
-The value function of a state $s$ under a policy $\pi$, denoted $v_\pi(s), is the expected return
-when starting in $s$ and following $\pi$ thereafter. For MDPs, we can define $v_\pi$ formally by
+### State-value $v _ \pi(s)$
+The value function of a state $s$ under a policy $\pi$, denoted $v _ \pi(s), is the expected return
+when starting in $s$ and following $\pi$ thereafter. For MDPs, we can define $v _ \pi$ formally by
 
-$$\begin{aligned} v_\pi(s) =& \mathbb{E}_\pi[G_t|S_t=s]\\ =& \mathbb{E}_\pi \left[\left. \sum\limits_{k=0}^\infty \gamma^k R_{t+k+1\right | S_t=s\right] \end{aligned}$$
-for all $s\in S$ where $\mathbb{E}_\pi[\cdot]$ denotes the expected value of a random variable given that the agent follows policy $\pi$, and $t$ is any time step.
+$$
+\begin{aligned}
+v_ \pi(s) =& \mathbb{E}_ \pi[G_ t|S_ t=s]\\ 
+=& \mathbb{E}_ \pi \left[\left. \sum\limits_ {k=0}^\infty \gamma^k R_ {t+k+1}\right | S_ t=s\right]
+\end{aligned}
+$$
+
+for all $s\in S$ where $\mathbb{E} _ \pi[\cdot]$ denotes the expected value of a random variable given that the agent follows policy $\pi$, and $t$ is any time step.
 
 > The value of the terminal state, if any, is always zero. 
 
-We call the function $v_\pi$ the *state-value function* for policy $\pi$.
+We call the function $v _ \pi$ the *state-value function* for policy $\pi$.
 
-### Action-value $q_\pi(s,a)$
+### Action-value $q _ \pi(s,a)$
 
 
 Similarly, we define the value of taking action $a$ in state $s$ under a policy $\pi$, denoted
-$q_\pi(s, a)$, as the expected return starting from $s$, taking the action $a$, and thereafter
+$q _ \pi(s, a)$, as the expected return starting from $s$, taking the action $a$, and thereafter
 following policy $\pi$:
 
 
-$$q_\pi(s,a) = \mathbb{E}_\pi[G_t|S_t=s,A_t=a] = \mathbb{E}_\pi \left[\left. \sum\limits_{k=0}^\infty\gamma^k R_{t+k+1\right| S_t=s,A_t=a\right]$$
+$$
+\begin{aligned}
+q_ \pi(s,a) =& \mathbb{E}_ \pi[G_ t|S_ t=s,A_ t=a]\\
+=& \mathbb{E}_ \pi \left[\left. \sum\limits_ {k=0}^\infty\gamma^k R_ {t+k+1}\right| S _ t=s,A _ t=a\right]
+\end{aligned}
+$$
 
-We call $q_\pi$ the *action-value function* for policy $\pi$.
 
-> The value functions $v_\pi$ and $q_\pi$ can be estimated from experience.
+We call $q _ \pi$ the *action-value function* for policy $\pi$.
+
+> The value functions $v _ \pi$ and $q _ \pi$ can be estimated from experience.
 
 
 ---
@@ -70,10 +82,15 @@ A fundamental property of value functions used throughout reinforcement learning
 
 For any policy $\pi$ and any state $s$, the following consistency condition holds between the value of s and the value of its possible successor states:
 
-$$\begin{aligned} v_\pi(s) =& \mathbb{E}_\pi[G_t|S_t=s]\\
-=& \mathbb{E}_\pi \left[\left. \sum\limits_{k=0}^\infty\gamma^k R_{t+k+1\right | S_t=s \right]\\
-=& \sum\limits_a\pi(a|s)\sum\limits_{s'}\sum\limits_{a}p(s',r|s,a)\left[r+\gamma \mathbb{E}_\pi\left[ G_{t+1} | S_{t+1} = s' \right]\right]\\
-=&\sum\limits_a\pi(a|s) \ sum\limits_{s',a} p(s',r|s,a) \left[r + \gamma v_\pi(s') \right], \text{for all} s\in S\end{aligned}$$
+$$
+\begin{aligned}
+v_ \pi(s) =& \mathbb{E}_ \pi[G_ t|S_ t=s] \\
+=& \mathbb{E}_ \pi \left[\left. \sum\limits_ {k=0}^\infty\gamma^k R_ {t+k+1}\right| S_ t=s \right]\\
+=& \sum\limits _ a\pi(a|s)\sum\limits _ {s'}\sum\limits _ {a}p(s',r|s,a)\left[r+\gamma \mathbb{E} _ \pi\left[ G _ {t+1} | S _ {t+1} = s' \right]\right]\\
+=&\sum\limits _ a\pi(a|s) \sum\limits _ {s',a} p(s',r|s,a) \left[r + \gamma v _ \pi(s') \right], \text{for all} s\in S
+\end{aligned}
+$$
+
 
 It is a sum over all values of the three variables, $a$, $s'$, and $r$. For each triple, we compute its probability, $\pi(a|s)p(s',r|s,a)$, weight the quantity in brackets by that probability, then sum over all possibilities to get an expected value.
 
@@ -83,13 +100,13 @@ The Bellman equation averages over all the possibilities, weighting each by its 
 
 # Backup diagram
 
-![](./L11_02.png)
+![](./L11 _ 02.png)
 
 Diagrams like that above are called *backup diagrams*, because they diagram relationships that form the basis of the update or *backup* operations that are at the heart of reinforcement learning methods. These operations transfer value information *back* to a state(or a state-action pair) from its successor states(or state-action pairs).
 
 
 ---
-![](./L11_03.png)
+![](./L11 _ 03.png)
 
 
 - Policy $\pi$ random, each action(left,right,top,bottom) equal probability $(0.25)$.
@@ -99,6 +116,7 @@ Diagrams like that above are called *backup diagrams*, because they diagram rela
 # References
 
 - ["Reinforcement Learning: An Introduction", Richard S. Sutton and Andrew G. Barto, 2nd Edition.](https://inst.eecs.berkeley.edu/~cs188/sp20/assets/files/SuttonBartoIPRLBook2ndEd.pdf)
+
 
 
 

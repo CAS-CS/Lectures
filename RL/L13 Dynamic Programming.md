@@ -77,7 +77,6 @@ Dynamic programming is a powerful technique used in reinforcement learning to so
 - The key idea is to solve each subproblem only once and store the solutions, which can then be reused to solve larger problems efficiently. 
 > In reinforcement learning, the Bellman equation is often used to express the optimal value function in terms of smaller subproblems.
 
-Consider a gridworld navigation problem where an agent moves through a grid, and at each cell, it can take one of four actions: up, down, left, or right. The goal is to find the optimal policy that maximizes the expected cumulative reward.
 ---
 ### Example: Gridworld
 Consider a gridworld navigation problem where an agent moves through a grid, and at each cell, it can take one of four actions: **up, down, left, or right**. *The goal is to find the optimal policy that maximizes the expected cumulative reward.*

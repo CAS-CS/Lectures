@@ -8,7 +8,7 @@ $R _ {t,i}$, $\pi _ {t,i}$, $T _ {i}$ , etc.).
 
 To obtain a single notation that covers both episodic and continuing tasks. We have defined the return as a sum over a finite number of terms in one case and as a sum over an infinite number of terms in the other. These two can be unified by considering episode termination to be the entering of a special *absorbing state* that transitions only to itself and that generates only rewards of zero.
 
-![](./L11 _ 01.png)
+![](./L11_01.png)
 
 Here the solid square represents the special absorbing state corresponding to the end of an
 episode. Starting from $S _ 0$ , we get the reward sequence $+1, +1, +1, 0, 0, 0, . . ..$ Summing
@@ -100,13 +100,13 @@ The Bellman equation averages over all the possibilities, weighting each by its 
 
 # Backup diagram
 
-![](./L11 _ 02.png)
+![](./L11_02.png)
 
 Diagrams like that above are called *backup diagrams*, because they diagram relationships that form the basis of the update or *backup* operations that are at the heart of reinforcement learning methods. These operations transfer value information *back* to a state(or a state-action pair) from its successor states(or state-action pairs).
 
 
 ---
-![](./L11 _ 03.png)
+![](./L11_03.png)
 
 
 - Policy $\pi$ random, each action(left,right,top,bottom) equal probability $(0.25)$.

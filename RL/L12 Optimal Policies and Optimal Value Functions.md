@@ -76,8 +76,8 @@ Once one has $v_*$ , it is relatively easy to determine an optimal policy. For e
 # Solving the Bellman optimality equation
 
 Explicitly solving the Bellman optimality equation provides one route to finding an
-optimal policy, and thus to solving the reinforcement learning problem. **However, this
-solution is rarely directly useful**. It is akin to an exhaustive search, looking ahead at
+optimal policy, and thus to solving the reinforcement learning problem. __However, this
+solution is rarely directly useful__. It is akin to an exhaustive search, looking ahead at
 all possibilities, computing their probabilities of occurrence and their desirabilities in
 terms of expected rewards. 
 
@@ -87,7 +87,7 @@ terms of expected rewards.
 1. We have enough computational resources to complete the computation of the solution; and 
 1. the Markov property. 
 
-> For example, although the first and third assumptions present no problems for the game of backgammon, the second is a major impediment. Because the game has about $10^20$ states, it would take thousands of years on today’s fastest computers to solve the Bellman equation for  $v_*$ , and the same is true for finding $q_*$ . 
+> For example, although the first and third assumptions present no problems for the game of backgammon, the second is a major impediment. Because the game has about $10^{20}$ states, it would take thousands of years on today’s fastest computers to solve the Bellman equation for  $v_*$ , and the same is true for finding $q_*$ . 
 
 
 

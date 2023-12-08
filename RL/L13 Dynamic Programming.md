@@ -19,10 +19,10 @@ The key idea behind dynamic programming is to solve a problem by solving its sma
 4. **Deterministic Algorithms:** DP provides deterministic algorithms, meaning the same input will always produce the same output. This determinism is crucial in many applications, including algorithmic problem-solving and optimization.
 
 5. **Examples of DP Applications:**
-   - **Fibonacci Sequence:** Computing Fibonacci numbers using naive recursion involves redundant calculations, while DP can optimize this by storing previously computed values.
-   - **Shortest Path Problems:** DP is used to find the shortest paths in graph problems.
-   - **Sequence Alignment:** DP is applied in bioinformatics for comparing DNA, RNA, or protein sequences.
-   - **Resource Allocation:** It is used in optimization problems like the knapsack problem.
+- **Fibonacci Sequence:** Computing Fibonacci numbers using naive recursion involves redundant calculations, while DP can optimize this by storing previously computed values.
+- **Shortest Path Problems:** DP is used to find the shortest paths in graph problems.
+- **Sequence Alignment:** DP is applied in bioinformatics for comparing DNA, RNA, or protein sequences.
+- **Resource Allocation:** It is used in optimization problems like the knapsack problem.
 
 
 ---
@@ -119,7 +119,7 @@ where:
 3. **Policy Extraction:**
    Once the value function has converged, the optimal policy can be extracted as:
    \[ \pi^*(s) = \arg\max_a \left( \sum_{s'} P_{ss'}^a [R_{ss'}^a + \gamma V(s')] \right) \]
-
+---
 ### Python Code:
 
 Python code using dynamic programming to solve the gridworld problem:

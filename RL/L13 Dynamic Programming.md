@@ -125,58 +125,60 @@ Python code using dynamic programming to solve the gridworld problem:
 
 ```python
 import numpy as np
-
 # Define gridworld parameters
 num_rows = 3
 num_cols = 4
 num_actions = 4
 gamma = 0.9  # discount factor
-
 # Initialize the value function
 V = np.zeros((num_rows, num_cols))
-
 # Define transition probabilities and rewards (simplified for illustration)
 P = np.ones((num_rows, num_cols, num_actions, num_rows, num_cols)) / num_actions
 R = np.zeros((num_rows, num_cols, num_actions, num_rows, num_cols))
 R[0, 1, 1, 0, 2] = 1  # example: reward of 1 for moving right from (0,1) to (0,2)
-
 # Dynamic Programming Iteration
 num_iterations = 100
 for _ in range(num_iterations):
     new_V = np.zeros_like(V)
     for i in range(num_rows):
         for j in range(num_cols):
+            temp_values = []
             for a in range(num_actions):
-                new_V[i, j] = max(new_V[i, j], np.sum(
+                temp_values.append(np.sum(
                     P[i, j, a, i_prime, j_prime] * (R[i, j, a, i_prime, j_prime] + gamma * V[i_prime, j_prime])
                     for i_prime in range(num_rows) for j_prime in range(num_cols)
                 ))
+            new_V[i, j] = max(temp_values)
+
     V = new_V
 
 # Extract Optimal Policy
-optimal_policy = np.zeros((num_rows, num_cols), dtype=int)
-for i in range(num_rows):
-    for j in range(num_cols):
-        optimal_policy[i, j] = np.argmax(
-            [np.sum(P[i, j, a, i_prime, j_prime] * (R[i, j, a, i_prime, j_prime] + gamma * V[i_prime, j_prime])
-                    for i_prime in range(num_rows) for j_prime in range(num_cols)]
-             for a in range(num_actions)]
-        )
-
+optimal_policy[i, j] = np.argmax([
+  np.sum( 
+    P[i, j, a, i_prime, j_prime] * (R[i, j, a, i_prime, j_prime] + gamma * V[i_prime, j_prime])
+      for i_prime in range(num_rows) for j_prime in range(num_cols))
+    for a in range(num_actions)
+])
 print("Optimal Value Function:")
 print(V)
 print("\nOptimal Policy:")
 print(optimal_policy)
 ```
 
+
+
 This is a basic example to give you a sense of how dynamic programming can be applied to reinforcement learning problems. 
 > In practice, more sophisticated algorithms like *policy iteration* or *value iteration* are often used for larger problems.
 ---
 # References
 
+
+
 - ["Reinforcement Learning: An Introduction", Richard S. Sutton and Andrew G. Barto, 2nd Edition.](https://inst.eecs.berkeley.edu/~cs188/sp20/assets/files/SuttonBartoIPRLBook2ndEd.pdf)
 
 
+## Gridworld example python code
+[https://github.com/dxganta/gridworld/blob/master/RL_gridworld.ipynb](https://github.com/dxganta/gridworld/blob/master/RL_gridworld.ipynb)
 
 
 

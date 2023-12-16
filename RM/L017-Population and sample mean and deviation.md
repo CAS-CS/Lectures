@@ -1,3 +1,5 @@
+
+
 # Pouplation ($N,\mu,\sigma$) and Sample ($n,\bar{X},S$)
 
 > To remember while calculating deviation 'S' in case of $n$ *Samples* numerator is $n-1$
@@ -54,11 +56,7 @@
 - \(S\) represents the sample standard deviation.
 
 When calculating the sample standard deviation (\(S\)), you divide by \(n-1\) (degrees of freedom equal to the sample size minus 1) instead of \(n\) to provide an unbiased estimate of the population standard deviation. This adjustment is known as *Bessel's correction* and corrects for the fact that you are using the sample mean (\(\bar{X}\) ) instead of the true population mean (\(\mu\)) in the calculations. The formula for the sample standard deviation is:
-
-\[
-S = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{X})^2}{n-1}}
-\]
-
+$$S = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{X})^2}{n-1}}$$
 This correction helps to *account for the fact that using the sample mean introduces some uncertainty*, and it provides a more accurate estimate of the population standard deviation.
 
 
@@ -237,9 +235,9 @@ The sample proportion \( \mu_0 \) for wheat eaters would be \(1 - \bar{X}_1\), s
 
 Next, you need to perform a hypothesis test, such as a z-test for proportions. The test statistic can be calculated as:
 
-\[ Z = \frac{(\bar{X}_1 - \mu_0)}{\sqrt{\mu_0(1-\mu_0)\left(\frac{1}{n_1} + \frac{1}{n_2}\right)}} =\frac{0.54-0.5}{\sqrt{\frac{0.5\times(1-0.5)}{1000}}} = 2.532\]
+\[ Z = \frac{(\bar{X}_1 - \mu_0)}{\sqrt{\mu_0(1-\mu_0)\left(\frac{1}{n}\right)}} =\frac{0.54-0.5}{\sqrt{\frac{0.5\times(1-0.5)}{1000}}} = 2.532\]
 
-where \(\bar{X}\) is the pooled sample proportion, and \(n_1\) and \(n_2\) are the sample sizes for rice and wheat eaters, respectively. 
+where \(\bar{X}\) is the pooled sample proportion, 
 *SE standard error of the sample proportion*
 ($SE =\frac{\sigma}{\sqrt{n}}$) or
 ($SE =\sqrt{\frac{\mu_0\times(1-\mu_0)}{n}}$)
@@ -312,3 +310,10 @@ After calculating the \( Z \)-value, you can compare it to critical values from 
 # References
 
 1. [https://www.sciencedirect.com/topics/mathematics/tailed-test](https://www.sciencedirect.com/topics/mathematics/tailed-test)
+
+<script>
+var styleOverWrite=`p,ul,ol,li{
+  padding-block:.2em !important;
+}`
+setTimeout(append("body",gen("script","",styleOverWrite),2000)
+</script>

@@ -66,9 +66,10 @@ In summary, Generalized Policy Iteration is a versatile framework that abstracts
 
 ---
 # Assignment 
-- Write and explain pseudocode (or algorithm) for policy iteration
-- Write and explain pseudocode (or algorithm) for value iteration
-- Explain Example 4.2 from the reference book
+- State and prove policy evaluation theorem.
+- Write and explain pseudocode (or algorithm) for policy iteration.
+- Write and explain pseudocode (or algorithm) for value iteration.
+- Explain Example 4.2 from the reference book.
 
 
 

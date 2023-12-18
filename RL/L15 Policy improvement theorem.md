@@ -54,10 +54,11 @@ Generalized Policy Iteration (GPI) is a framework in reinforcement learning that
 #### 2. **Policy Improvement:**
 - In policy improvement, the goal is to improve the current policy based on the current estimate of the value function.
 - This can be done by selecting actions that are expected to yield higher rewards according to the current value function, effectively making the policy more greedy with respect to the value function.
-
+![](./L15_01.png)
 The iterations between policy evaluation and policy improvement create a feedback loop, and this process is repeated until a convergence criterion is met or a satisfactory policy is found.
 
 
+![](./L15_02.png)
 
 It provides a conceptual bridge between different reinforcement learning algorithms, emphasizing the key *commonality of iteratively improving both policies and value functions*.
 

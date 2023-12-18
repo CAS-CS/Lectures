@@ -11,3 +11,5 @@
 ./L11 Unified Notation for Returns, Polity and Value functions.md
 ./L12 Optimal Policies and Optimal Value Functions.md
 ./L13 Dynamic Programming.md
+./L14 DP and Policy Iteration.md
+./L15 Policy improvement theorem.md

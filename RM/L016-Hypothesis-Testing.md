@@ -36,30 +36,30 @@ It's important to note that *statistical significance* does not prove the truth 
 ---
 
 # Rules for writing H0 and H1 using $=, \leq, \geq$:
-- **H0 (Null Hypothesis):**
+#### H0 (Null Hypothesis):
 - Always uses an equal symbol ($=$).
 - Represents the status quo, the default assumption, or the hypothesis you aim to disprove.
-* **H1 (Alternative Hypothesis):**
+#### H1 (Alternative Hypothesis):
 - Never uses an equal symbol ($=$).
 - Represents the alternative to the null hypothesis, the claim you want to support with evidence.
 - Uses inequality symbols ($<$, $>$, $\leq$, $\geq$, $\neq$) depending on the direction of the claim.
 
-**Example 1:**
+#### Example 1:
 - **H0:** The average weight of a newborn baby is 7 pounds.
 * **H1:** The average weight of a newborn baby is **not** 7 pounds. (This can be written as H1: The average weight of a newborn baby is $< 7$ pounds, $> 7$ pounds, or $\geq$ 7 pounds)
 
-**Example 2:**
+#### Example 2:
 - **H0:** The temperature is 70°F.
 * **H1:** The temperature is **higher than** 70°F. (H1: The temperature is > 70°F)
 
-**Example 3:**
+#### Example 3:
 - **H0:** The proportion of students who like chocolate ice cream is 0.5.
 * **H1:** The proportion of students who like chocolate ice cream is **greater than** 0.5. (H1: The proportion of students who like chocolate ice cream is > 0.5)
 
-**Rule for using = with H0:**
+#### Rule for using $=$ with H0:
 - The equal symbol ($=$) always appears in the null hypothesis (H0) because it represents the statement that there is **no difference** between the two things being compared.
 
-**Using inequality symbols with H1:**
+#### Using inequality symbols with H1:
 - The choice of inequality symbol ($<$, $>$, $\leq$, $\geq$, $\neq$) in H1 depends on the specific claim you are making.
 - Use $>$ or $<$ when the claim implies a direction (higher, lower).
 - Use $\leq$ or $\geq$$ when the claim includes the possibility of equality.
@@ -255,18 +255,18 @@ It's essential to choose an appropriate level of significance based on the goals
 
 The choice of the level of significance, denoted by \(\alpha\) (alpha), is somewhat arbitrary and depends on the goals of the study and the consequences of making Type I errors. Here are some considerations:
 
-1. **Commonly Used Levels:**
+#### 1. Commonly Used Levels:
 -  The most common levels of significance are 0.05, 0.01, and 0.10.
 -  A significance level of 0.05 is often considered a standard in many fields, representing a 5% chance of committing a Type I error.
 
-2. **Context and Consequences:**
+#### 2. Context and Consequences:
 -  Consider the context of the study and the impact of making a Type I error (rejecting a true null hypothesis).
 -  If the consequences of a Type I error are severe, a lower significance level (e.g., 0.01) may be chosen for a higher level of confidence.
 
-3. **Research Standards:**
+#### 3. Research Standards:
 -  Some fields or research areas may have established conventions for the level of significance based on historical practices and standards.
 
-4. **Multiple Testing Adjustments:**
+#### 4. Multiple Testing Adjustments:
 -  When conducting multiple tests on the same data set, researchers may use Bonferroni correction or other adjustments to control the overall Type I error rate.
 ---
 ### P-Value Calculation:

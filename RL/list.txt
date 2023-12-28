@@ -13,3 +13,5 @@
 ./L13 Dynamic Programming.md
 ./L14 DP and Policy Iteration.md
 ./L15 Policy improvement theorem.md
+./L16 Model Free Learning Q-Learinig and SARSA.md
+./L17 Monte Carlo methods and Batch Reinforcement.md

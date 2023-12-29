@@ -250,3 +250,13 @@ During simulation (rollout), the algorithm plays out the game randomly or using 
 Over several iterations, MCTS refines its estimate of the values of different moves, helping the algorithm make better decisions in the face of uncertainty.
 
 > Batch Reinforcement Learning deals with learning from a fixed dataset, while Monte Carlo Tree Search is an algorithm for sequential decision-making that uses tree exploration and random simulations to guide decision-making in complex domains.
+
+
+
+---
+
+# References
+
+- [Monte Carlo Methods in Reinforcement Learning](https://github.com/BY571/Medium_Code_Examples/blob/master/Gridworld/Monte%20Carlo%20Methods%20Examples.ipynb)
+
+- [Monte Carlo Reinforcement Learning: A Hands-On Approach](https://tawsifkamal.medium.com/monte-carlo-reinforcement-learning-a-hands-on-approach-97b412b48293)

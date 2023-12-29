@@ -4,32 +4,27 @@ Monte Carlo methods are a class of computational algorithms that rely on *repeat
 
 ### Estimating the value of pi using Monte Carlo
 <svg width="200" height="200" viewbox="50 00 50 50">   <rect width="100" height="100" style="fill:hsla(180,30%,60%,.8);stroke-width:2;stroke:hsla(180,30%,10%,.8)" />  <circle cx="50" cy="50" r="50" stroke=hsla(18,30%,10%,.8) stroke-width="1" fill=hsla(20,30%,60%,.8) /></svg>
+
+<svg    width="210mm"    height="297mm"    viewBox="0 0 210 297"    version="1.1"    id="svg5"    xmlns="http://www.w3.org/2000/svg"    xmlns:svg="http://www.w3.org/2000/svg">   <defs      id="defs2" />   <g      id="layer1">     <rect        style="fill:#3e545c;stroke:#008080;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:10.2047;paint-order:stroke fill markers;fill-opacity:0.76465726"        id="rect234"        width="180.02402"        height="124.59566"        x="15.493439"        y="53.036682" />     <circle        style="fill:#b91363;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:10.2047;paint-order:stroke fill markers;fill-opacity:1"        id="path392"        cx="77.752121"        cy="111.16313"        r="50" />     <rect        style="fill:#008000;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:10.2047;paint-order:stroke fill markers;fill-opacity:0.21916415"        id="rect550"        width="50"        height="50"        x="77.671928"        y="111.25816" />     <rect        style="fill:#008000;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:10.2047;paint-order:stroke fill markers"        id="rect660"        width="50"        height="50"        x="140.15074"        y="111.25816" />   </g> </svg>
 Estimating the value of pi using Monte Carlo simulation is a classic and simple example of how this technique can be applied. 
 > The basic idea is to use random sampling to approximate the ratio of the areas of a circle and a square, which can then be used to estimate pi.
 
 #### 1. **Setup:**
-   
 - Consider a unit square with a side length of 1, centered at the origin (0,0).
 - Inside this square, inscribe a quarter circle with a radius of 1 (i.e., the circle is tangent to the square at the top right corner).
 
 #### 2. **Random Sampling:**
-   
 - Generate random points uniformly within the square.
 
 #### 3. **Check Point Location:**
-   
 - For each random point, check whether it falls inside the inscribed quarter circle.
 
 #### 4. **Counting:**
-   
 - Keep track of the number of points that fall inside the quarter circle and the total number of generated points.
 
 #### 5. **Estimate Pi:**
-   
 - The ratio of the number of points inside the quarter circle to the total number of points is approximately equal to the ratio of the areas of the quarter circle and the square.
-   
 - The area of the quarter circle is \( \frac{\pi}{4} \), and the area of the square is 1.
-   
 - So, the estimated value of pi (\( \pi \)) can be calculated as follows:
      \[ \text{Estimated } \pi \approx 4 \times \left(\frac{\text{Points inside the quarter circle}}{\text{Total points generated}}\right) \]
 
@@ -64,38 +59,94 @@ The more samples you use, the closer your estimate should be to the actual value
 ## Monte Carlo simulation in the context of reinforcement learning:
 
 #### Objective:
-
 - The main goal of Monte Carlo methods in reinforcement learning is to estimate the value function or policy by averaging the returns from multiple simulated episodes.
 
 #### Episodic Tasks:
-
 - Monte Carlo methods are typically applied to episodic tasks, where an agent interacts with the environment for a finite number of time steps and then the episode ends.
 
 #### Estimating State Values:
-
 - Suppose you want to estimate the value of a particular state \(s\) in an MDP. To do this using Monte Carlo methods, you run multiple episodes, and for each episode, you record the total return (sum of rewards) from the time step the agent first enters state \(s\) until the end of the episode.
-
 - The estimated value of state \(s\) is then the average of all these returns.
 
 #### First-Visit and Every-Visit Monte Carlo:
-
 - There are two common variants of Monte Carlo methods: first-visit and every-visit.
 1. In first-visit Monte Carlo, you only consider the returns from the first time the agent visits state \(s\) in each episode.
 2. In every-visit Monte Carlo, you consider all visits to state \(s\) in each episode.
 
 #### Policy Evaluation:
-
 - Monte Carlo methods are often used for policy evaluation, where the goal is to estimate the value function of a given policy.
 
 #### Control Using Monte Carlo:
-
 - In addition to policy evaluation, Monte Carlo methods can be used for policy improvement and control. This involves iteratively improving the policy based on the estimated value functions.
 
 #### Exploration-Exploitation Trade-off:
-
 - Like other reinforcement learning methods, Monte Carlo methods need to balance exploration and exploitation. This can be achieved through strategies such as epsilon-greedy policies.
 
 > Monte Carlo methods in reinforcement learning are used for estimating the value of states by simulating episodes and averaging the returns. These methods are particularly useful in episodic tasks and provide a way to learn from actual experiences rather than relying on a model of the environment.
+
+
+
+---
+
+
+# "first-visit" and "every-visit" Monte Carlo methods 
+
+"first-visit" and "every-visit" Monte Carlo methods are two different approaches to estimating the value of states or state-action pairs.
+
+
+1. **First-Visit Monte Carlo:**
+- In the first-visit method, the idea is to only consider the first time a state or state-action pair is visited in a trajectory (sequence of states and actions from the start to the end of an episode).
+- The value of a state or state-action pair is calculated by averaging the returns obtained only on the first visit to that state or state-action pair across all episodes.
+
+2. **Every-Visit Monte Carlo:**
+- In the every-visit method, all visits to a state or state-action pair are considered for calculating the average return.
+- The value of a state or state-action pair is calculated by averaging the returns obtained on every visit to that state or state-action pair across all episodes.
+
+**Difference in Averaging Values:**
+- The key difference lies in which visits are considered when calculating the average return for a state or state-action pair.
+- In first-visit Monte Carlo, each state or state-action pair is only considered once per episode, and the average is taken only over these unique visits.
+- In every-visit Monte Carlo, every occurrence of a state or state-action pair is considered, and the average is taken over all visits across all episodes.
+
+> The choice between first-visit and every-visit depends on the specific requirements of the problem. In some cases, considering only the first visit might be appropriate, while in other cases, every visit might provide a more accurate estimate of the value. The choice can also impact the convergence properties of the learning algorithm and its performance.
+
+---
+Let's consider the value estimation for a state in the context of Monte Carlo methods. The value of a state is estimated as the average return obtained when that state is visited. The formulas for first-visit and every-visit Monte Carlo are as follows:
+
+### First-Visit Monte Carlo:
+
+For a state \(s\):
+
+\[ V(s) = \frac{\sum_{i=1}^{N} G_i}{N} \]
+
+where:
+- \(N\) is the number of first visits to state \(s\).
+- \(G_i\) is the return obtained on the \(i\)-th first visit to state \(s\).
+
+### Every-Visit Monte Carlo:
+
+For a state \(s\):
+
+\[ V(s) = \frac{\sum_{i=1}^{M} G_i}{M} \]
+
+where:
+- \(M\) is the total number of visits to state \(s\).
+- \(G_i\) is the return obtained on the \(i\)-th visit to state \(s\).
+
+### Example:
+
+Let's consider a simple episodic task where an agent moves through states in a gridworld. The returns are the sum of rewards obtained until the end of the episode.
+
+#### First-Visit Monte Carlo:
+- Episode 1: Visits to State A - Returns: 5, 8
+- Episode 2: Visits to State A - Returns: 6
+- \(V_{\text{first-visit}}(A) = \frac{5 + 6}{2} = 5.5\)
+
+#### Every-Visit Monte Carlo:
+- Episode 1: Visits to State A - Returns: 5, 8
+- Episode 2: Visits to State A - Returns: 6
+- \(V_{\text{every-visit}}(A) = \frac{5 + 8 + 6}{3} = 6.33\)
+
+In this example, \(V_{\text{first-visit}}(A)\) considers only the first visit in each episode, while \(V_{\text{every-visit}}(A)\) considers every visit, providing different estimates based on the averaging strategy. The actual values will depend on the specific returns obtained in each episode.
 
 ---
 

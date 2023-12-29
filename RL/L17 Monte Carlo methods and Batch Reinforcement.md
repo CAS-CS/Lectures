@@ -134,7 +134,53 @@ where:
 
 ### Example:
 
-Let's consider a simple episodic task where an agent moves through states in a gridworld. The returns are the sum of rewards obtained until the end of the episode.
+Let's consider a simple gridworld with a starting state (S), a goal state (G), and a few other states (A, B, C). The agent can move up, down, left, or right, and each move incurs a reward of -1, except when reaching the goal state, where the reward is +10. The episodes end when the goal state is reached. Here's an example grid:
+
+```
+---------------------
+| S |   |   |   |   |
+---------------------
+| A |   | B |   |   |
+---------------------
+|   |   | C | G |   |
+---------------------
+```
+
+Now, let's consider two episodes:
+
+**Episode 1:**
+1. Start from S.
+2. Move right to A (-1).
+3. Move up to B (-1).
+4. Move up to C (-1).
+5. Move right to G (+10).
+
+The returns for each visit to state A during this episode are 5 and 8.
+
+**Episode 2:**
+1. Start from S.
+2. Move right to A (-1).
+3. Move up to B (-1).
+4. Move up to C (-1).
+5. Move right to G (+10).
+
+The return for the visit to state A during this episode is 6.
+
+Now, let's calculate the values using both first-visit and every-visit Monte Carlo:
+
+### First-Visit Monte Carlo:
+
+\[ V_{\text{first-visit}}(A) = \frac{5 + 6}{2} = 5.5 \]
+
+### Every-Visit Monte Carlo:
+
+\[ V_{\text{every-visit}}(A) = \frac{5 + 8 + 6}{3} = 6.33 \]
+
+
+
+
+
+> The returns are the sum of rewards obtained until the end of the episode.
 
 #### First-Visit Monte Carlo:
 - Episode 1: Visits to State A - Returns: 5, 8

@@ -18,6 +18,17 @@ Assistant Professor CSED
 
 [Presentation PPT](./ACNC_Chapter_3_v8.2.pptx)
 
+## Assignment
+
+- Write short note on fairness in TCP 
+
+## Lab
+- Explore TCP in wireshark
+- Explore UDP in wireshark
+---
+# References
+
+- Computer Networking: A Top-Down Approach, James F. Kuros and Keith W. Ross, Pearson, 6th Edition,2012
 
 
 

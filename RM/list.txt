@@ -15,5 +15,6 @@
 ./L015-Stages and Types of Research.md
 ./L016-Hypothesis-Testing.md
 ./L017-Population and sample mean and deviation.md
+./Major Hints.md
 ./Minor I Hints.md
 ./Minor II Hints.md

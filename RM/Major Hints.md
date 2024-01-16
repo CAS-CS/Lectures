@@ -106,25 +106,20 @@ Attempt any THREE questions from four of the following.
 # Hints
 (i) **LaTeX Commands (Packages, Environments):**
 
-1. **\documentclass{...}:** Specifies the type of document (article, book, report) and its formatting.
+1. `\documentclass{...}:` Specifies the type of document (article, book, report) and its formatting.
 
-2. **\usepackage{...}:** Includes external packages to enhance LaTeX functionality, like graphics, math symbols, or formatting.
+2. `\usepackage{...}` Includes external packages to enhance LaTeX functionality, like graphics, math symbols, or formatting.
 
-3. **\begin{document}...\end{document}:** Contains the main content of the document.
+3. `\begin{document}...\end{document}` Contains the main content of the document.4. `\section{...}, \subsection{...}, \subsubsection{...}` Divides the document into sections and subsections.
+5. `\textbf{...}, \textit{...}, \underline{...}` Formats text in bold, italic, or underlined styles.
+6. `\begin{equation}...\end{equation}` Initiates and concludes an equation environment for mathematical expressions.
+7. `\includegraphics{...}` Inserts external graphics into the document.
+8. `\begin{itemize}...\end{itemize}` Creates an unordered list.
+9. `\begin{enumerate}...\end{enumerate}` Generates an ordered list.
+10. `\begin{tabular}{...}...\end{tabular}` Constructs tables with specified columns.
 
-4. **\section{...}, \subsection{...}, \subsubsection{...}:** Divides the document into sections and subsections.
 
-5. **\textbf{...}, \textit{...}, \underline{...}:** Formats text in bold, italic, or underlined styles.
 
-6. **\begin{equation}...\end{equation}:** Initiates and concludes an equation environment for mathematical expressions.
-
-7. **\includegraphics{...}:** Inserts external graphics into the document.
-
-8. **\begin{itemize}...\end{itemize}:** Creates an unordered list.
-
-9. **\begin{enumerate}...\end{enumerate}:** Generates an ordered list.
-
-10. **\begin{tabular}{...}...\end{tabular}:** Constructs tables with specified columns.
 
 (ii) **Beamer Class in LaTeX:**
 The Beamer class is used for creating presentations and slides. It provides features for easy slide creation, customization, and dynamic content insertion. Example:
@@ -270,28 +265,21 @@ Attempt any ONE question from two of the following
 
 ```latex
 \documentclass{article}
-
 \usepackage{graphicx}  % For including figures
 \usepackage{amsmath}   % For mathematical symbols
-
 \begin{document}
-
 \title{Basic LaTeX Document}
 \author{Your Name}
 \date{\today}
-
 \maketitle
-
 \section{Introduction}
 This is a basic LaTeX document containing a list, table, equation, and figure.
-
 \section{List}
 \begin{itemize}
   \item Item 1
   \item Item 2
   \item Item 3
 \end{itemize}
-
 \section{Table}
 \begin{tabular}{|c|c|}
   \hline
@@ -301,12 +289,10 @@ This is a basic LaTeX document containing a list, table, equation, and figure.
   Cell 3 & Cell 4 \\
   \hline
 \end{tabular}
-
 \section{Equation}
 \begin{equation}
   E = mc^2
 \end{equation}
-
 \section{Figure}
 \begin{figure}[h]
   \centering
@@ -314,10 +300,8 @@ This is a basic LaTeX document containing a list, table, equation, and figure.
   \caption{Example Figure}
   \label{fig:example}
 \end{figure}
-
 \section{References}
 See Table \ref{tab:example}, Equation \eqref{eq:example}, and Figure \ref{fig:example}.
-
 \end{document}
 ```
 

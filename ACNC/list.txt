@@ -1,11 +1,10 @@
 ./
 ./CH3 TCP Congestion Detection and Control.md
-./L01 Syllabus and Introduction .md
+./L01 Syllabus and Introduction.md
 ./L02-05 Introduction.md
 ./L06-13 Application Layer.md
+./L0X- Link Layer and LAN.md
+./L0X- Security.md
 ./L14-22 Transport Layer.md
-./L23- Network Layer.md
-./ACNC_Chapter_1_v8.2.pptx
-./ACNC_Chapter_2_v8.2.pptx
-./ACNC_Chapter_3_v8.2.pptx
-./ACNC_Chapter_4_v8.2.pptx
+./L23-28 Network Layer.md
+./L29- Network Layer Control Plane.md

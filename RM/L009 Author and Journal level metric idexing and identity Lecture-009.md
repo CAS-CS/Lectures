@@ -51,11 +51,11 @@ The impact factor (IF) or journal impact factor (JIF) of an academic journal is 
 
 *As a journal-level metric, it is frequently used as a proxy for the relative importance of a journal within its field; journals with higher impact factor values are given the status of being more important, or carry more prestige in their respective fields, than those with lower values.*
 
-$$Impact\ Factor_{(for\ year\ X+1})\ (IF) = \frac{Total\ Citations\ in\ Year\ X}{Total\ Number\ of\ Articles\ Published\ in\ Year\ X\ and\ Year\ X-1}$$
+$$Impact\ Factor_{(for\ year\ X})\ (IF) = \frac{Total\ Citations\ in\ Year\ X}{Total\ Number\ of\ Articles\ Published\ in\ Year\ X-1\ and\ Year\ X-2}$$
 
     Total Citations in Year X: This represents the total number of citations that articles published in the journal received in a specific year (e.g., year X).
     
-    Total Number of Articles Published in Year X and Year X-1: This is the total number of articles published in the journal in the same year (year X) and the preceding year (year X-1).
+    Total Number of Articles Published in Year X-1 and Year X-2: This is the total number of articles published in the journal in the same year (year X-1) and the preceding year (year X-2).
 
 The Impact Factor is typically calculated annually based on data from the previous two years. For example, the Impact Factor for a journal in 2023 would be calculated using data from articles published in 2021 and 2022.
 

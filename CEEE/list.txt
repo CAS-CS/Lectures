@@ -1,3 +1,6 @@
 ./
 ./00 Syllabus.md
-./Part I.md
+./Part I Digital Logic.md
+./Part III Microprocessor 8085 8086.md
+./Part II.md
+./Part IV Transistors and Mosfet as switch.md

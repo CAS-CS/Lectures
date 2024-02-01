@@ -849,3 +849,14 @@ So, we require four programmable AND gates & two programmable OR gates for produ
 The **programmable AND gates** have the access of both normal and complemented inputs of variables. In the above figure, the inputs X, X′, Y, Y′, Z & Z′, are available at the inputs of each AND gate. So, program only the required literals in order to generate one product term by each AND gate.
 
 All these product terms are available at the inputs of each **programmable OR gate**. But, only program the required product terms in order to produce the respective Boolean functions by each OR gate. The symbol ‘X’ is used for programmable connections.
+
+
+
+# Recommendations
+
+- [](https://www.electronics-tutorials.ws/sequential/seq_1.html)
+
+- [The JK Flip Flop](https://www.electronics-tutorials.ws/sequential/seq_2.html)
+- [The Shift Register](https://www.electronics-tutorials.ws/sequential/seq_5.html)
+
+- [Johnson Ring Counter](https://www.electronics-tutorials.ws/sequential/seq_6.html)

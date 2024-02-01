@@ -4,7 +4,8 @@
 ./RL
 ./ML
 ./ACNC
-./.dist
+./CEEE
+./.github
 ./.Old
 ./IOT
 ./.git

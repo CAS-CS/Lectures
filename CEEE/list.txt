@@ -1,0 +1,3 @@
+./
+./00 Syllabus.md
+./Part I.md

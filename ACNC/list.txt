@@ -1,6 +1,15 @@
 ./
+./00 Syllabus and Introduction.md
 ./CH3 TCP Congestion Detection and Control.md
-./L01 Syllabus and Introduction.md
+./L02-05 Introduction.md
+./L06-13 Application Layer.md
+./L0X- Link Layer and LAN.md
+./L0X- Security.md
+./L14-22 Transport Layer.md
+./L23-28 Network Layer.md
+./L29- Network Layer Control Plane.md
+./00 Syllabus and Introduction.md
+./CH3 TCP Congestion Detection and Control.md
 ./L02-05 Introduction.md
 ./L06-13 Application Layer.md
 ./L0X- Link Layer and LAN.md

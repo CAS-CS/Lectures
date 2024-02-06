@@ -16,7 +16,7 @@ Assistant Professor CSED
 ## Link Layer and LAN
 
 
-[Presentation PPT](./ACNC_Chapter_5_v8.2.pptx)
+[Presentation PPT](./ACNC_Chapter_6_v8.2.pptx)
 
 
 

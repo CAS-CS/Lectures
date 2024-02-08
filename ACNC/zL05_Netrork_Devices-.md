@@ -1,5 +1,4 @@
-](mailto:prateekrajgautam@gmail.com)
----
+
 # Netrork Devices
 ---
 

@@ -1,5 +1,3 @@
-](mailto:prateekrajgautam@gmail.com)
----
 
 # Network Model
 

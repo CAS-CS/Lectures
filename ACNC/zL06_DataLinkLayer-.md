@@ -1,8 +1,4 @@
-](mailto:prateekrajgautam@gmail.com)
----
-
----
-Data Link Layer
+# Data Link Layer
 
 *   In the OSI model, the data link layer is a 4<sup>th</sup> layer from the top and 2<sup>nd</sup> layer from the bottom. 
 

@@ -1,4 +1,6 @@
 ./
+./00 Assignment.md
+./00 Lab Demo Assignment.md
 ./00 Syllabus and Introduction.md
 ./CH3 TCP Congestion Detection and Control.md
 ./L02-05 Introduction.md
@@ -8,3 +10,8 @@
 ./L23-28 Network Layer.md
 ./L29-32 Network Layer Control Plane.md
 ./L33- Link Layer and LAN.md
+./zL01-Lecture-1 Syllabus and Introduction .md
+./zL02_TCP IP model.md
+./zL03_Network Model.md
+./zL05_Netrork_Devices-.md
+./zL06_DataLinkLayer-.md

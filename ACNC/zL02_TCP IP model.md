@@ -1,6 +1,3 @@
-](mailto:prateekrajgautam@gmail.com)
----
-
 
 # TCP/IP model
 
